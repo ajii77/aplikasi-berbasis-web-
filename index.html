@@ -1,12 +1,227 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jual Aplikasi - Rumah Aji Apps</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Reset CSS */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li,
+        img {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .tbl-biru {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .tbl-biru:hover {
+            background-color: #155ab2;
+        }
+
+        /* Section Wrapper */
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Home Section */
+        section#home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 0;
+        }
+
+        section#home .kolom {
+            flex: 1;
+            max-width: 45%;
+        }
+
+        section#home .gambar {
+            flex: 1;
+            max-width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section#home img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Features Section */
+        section#features {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+        }
+
+        section#features .kolom {
+            flex: 1;
+            max-width: 45%;
+        }
+
+        section#features .gambar {
+            flex: 1;
+            max-width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section#features img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Pricing Section */
+        section#pricing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        section#pricing .kolom {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .plan {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .plan h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .plan p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        section#contact {
+            background-color: #f1f1f1;
+            padding: 50px 0;
+        }
+
+        section#contact .kolom {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        section#contact ul {
+            list-style: none;
+        }
+
+        section#contact li {
+            margin-bottom: 10px;
+        }
+
+        section#contact a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+
+            section#home,
+            section#features {
+                flex-direction: column;
+            }
+
+            section#home .kolom,
+            section#features .kolom {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            section#home .gambar,
+            section#features .gambar {
+                max-width: 100%;
+                justify-content: center;
+            }
+
+            .plan {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -31,13 +246,18 @@
         <section id="home">
             <div class="kolom">
                 <h2>Aplikasi Berbasis Web</h2>
-                <p>Gunakan aplikasi kami untuk mengelola bisnis Anda dengan lebih efisien. Dapatkan fitur lengkap untuk mempermudah pekerjaan Anda.</p>
+                <p>Gunakan aplikasi kami untuk mengelola bisnis Anda dengan lebih efisien. Dapatkan fitur lengkap untuk
+                    mempermudah pekerjaan Anda.</p>
+                <p>Dengan teknologi terbaru dan antarmuka pengguna yang ramah, aplikasi kami memungkinkan Anda untuk
+                    mengelola inventaris, melakukan pelaporan otomatis, dan mengakses data penting kapan saja dan di
+                    mana saja. Tingkatkan produktivitas dan kelancaran operasional bisnis Anda dengan solusi kami yang
+                    terintegrasi.</p>
                 <p><a href="#pricing" class="tbl-biru">Beli Sekarang</a></p>
             </div>
-            <img 
-                src="https://img.freepik.com/free-vector/business-colorful-landing-page_52683-1045.jpg?t=st=1746627683~exp=1746631283~hmac=39db01820cc012594e1c83a8672b442b9b7d16217b93472a491e1e9384290e11&w=740" 
-                alt="Ilustrasi Aplikasi" 
-                width="50%">
+            <div class="gambar">
+                <img src="https://img.freepik.com/free-vector/business-colorful-landing-page_52683-1045.jpg?t=st=1746627683~exp=1746631283~hmac=39db01820cc012594e1c83a8672b442b9b7d16217b93472a491e1e9384290e11&w=740"
+                    alt="Ilustrasi Aplikasi" width="50%">
+            </div>
         </section>
 
         <!-- Features Section -->
@@ -52,10 +272,10 @@
                     <li>Antarmuka Pengguna yang Mudah Digunakan</li>
                 </ul>
             </div>
-            <img 
-                src="https://img.freepik.com/free-vector/social-media-marketing-theme-mobile_23-2148413417.jpg?t=st=1746627016~exp=1746630616~hmac=5c99a93bb31aeaaf3f01415fcbb6ce5846b11625432fb6bd4bdb92feae5552cd&w=740" 
-                alt="Fitur Aplikasi" 
-                width="50%">
+            <div class="gambar">
+                <img src="https://img.freepik.com/free-vector/social-media-marketing-theme-mobile_23-2148413417.jpg?t=st=1746627016~exp=1746630616~hmac=5c99a93bb31aeaaf3f01415fcbb6ce5846b11625432fb6bd4bdb92feae5552cd&w=740"
+                    alt="Fitur Aplikasi" width="50%">
+            </div>
         </section>
 
         <!-- Pricing Section -->
@@ -63,21 +283,18 @@
             <div class="kolom">
                 <h2>Harga Aplikasi</h2>
                 <p>Pilih paket sesuai kebutuhan Anda!</p>
-
-                <div class="pricing-plans">
-                    <div class="plan">
-                        <h3>Paket Basic</h3>
-                        <p>Rp 200.000/bulan</p>
-                        <p>Fitur dasar: Manajemen Inventaris, Pelaporan, dan Backup</p>
-                        <button class="tbl-biru">Beli Paket Basic</button>
-                    </div>
-                    <div class="plan">
-                        <h3>Paket Premium</h3>
-                        <p>Rp 500.000/bulan</p>
-                        <p>Semua fitur, termasuk Integrasi Pembayaran dan Analitik Lanjutan</p>
-                        <button class="tbl-biru">Beli Paket Premium</button>
-                    </div>
-                </div>
+            </div>
+            <div class="plan">
+                <h3>Paket Basic</h3>
+                <p>Rp 200.000/bulan</p>
+                <p>Fitur dasar: Manajemen Inventaris, Pelaporan, dan Backup</p>
+                <a href="paket-basic.html" class="tbl-biru">Beli Paket Basic</a>
+            </div>
+            <div class="plan">
+                <h3>Paket Premium</h3>
+                <p>Rp 500.000/bulan</p>
+                <p>Semua fitur, termasuk Integrasi Pembayaran dan Analitik Lanjutan</p>
+                <a href="paket-premium.html" class="tbl-biru">Beli Paket Premium</a>
             </div>
         </section>
 
@@ -86,15 +303,16 @@
             <div class="kolom">
                 <h2>Kontak Kami</h2>
                 <p>Jika Anda membutuhkan bantuan lebih lanjut, hubungi kami di bawah ini:</p>
-
                 <!-- WhatsApp Direct Message -->
-                <p><a href="https://wa.me/62895391640225?text=Halo%20Rumah%20Aji%20Apps%2C%20saya%20ingin%20bertanya%20tentang%20aplikasi%20yang%20Anda%20jual" class="tbl-biru">Kirim Pesan via WhatsApp</a></p>
+                <p><a href="https://wa.me/62895391640225?text=Halo%20Rumah%20Aji%20Apps%2C%20saya%20ingin%20bertanya%20tentang%20aplikasi%20yang%20Anda%20jual"
+                        class="tbl-biru">Kirim Pesan via WhatsApp</a></p>
 
                 <!-- Info Kontak Tambahan -->
                 <div class="kontak-info">
                     <h3>Atau hubungi kami langsung:</h3>
                     <ul>
-                        <li><strong>WhatsApp:</strong> <a href="https://wa.me/+62 895-3916-40225" target="_blank">+62 895-3916-40225</a></li>
+                        <li><strong>WhatsApp:</strong> <a href="https://wa.me/+62 895-3916-40225" target="_blank">+62
+                                895-3916-40225</a></li>
                         <li><strong>Email:</strong> <a href="mailto:fajrihajat@gmail.com">fajrihajat@gmail.com</a></li>
                         <li><strong>Alamat:</strong> Jl.kp kapitan RT 16/04</li>
                     </ul>
@@ -105,6 +323,5 @@
     </div>
 
 </body>
+
 </html>
-
-

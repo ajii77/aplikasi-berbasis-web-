@@ -1,20 +1,21 @@
-body{
-margin: 0;
+/* Reset CSS */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffffff;
-    color: #333;    
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.wrapper {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 0;
+    color: #333;
 }
 
 /* Navigation */
@@ -94,7 +95,8 @@ section {
     color: #1d62d1;
 }
 
-.kolom p, .kolom ul {
+.kolom p,
+.kolom ul {
     font-size: 16px;
     line-height: 1.6;
 }
@@ -141,7 +143,8 @@ form {
     max-width: 500px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
